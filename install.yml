@@ -1,0 +1,8 @@
+---
+- hosts: k8s
+  gather_facts: false
+  roles:
+    # Install images for k8s
+    - images
+    # Install prometheus for k8s
+    - prometheus
