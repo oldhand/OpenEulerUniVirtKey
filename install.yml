@@ -2,7 +2,15 @@
 - hosts: k8s
   gather_facts: false
   roles:
-    # Install images for k8s
+    # Install packages for k8s
+    - packages
+    # Install python packages for k8s
+    - pips
+#     Install images for k8s
     - images
     # Install prometheus for k8s
     - prometheus
+    # Install cadvisor for k8s
+    - cadvisor
+  # Install
+    - install
