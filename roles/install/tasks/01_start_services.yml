@@ -1,11 +1,4 @@
 ---
-- name: Enable and start openvswitch service
-  systemd:
-    name: openvswitch
-    enabled: yes
-    state: started
-    daemon_reload: yes
-
 - name: Enable and start libvirtd service
   systemd:
     name: libvirtd

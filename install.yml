@@ -3,14 +3,16 @@
   gather_facts: false
   roles:
     # Install packages for k8s
-    - packages
+#    - packages
     # Install python packages for k8s
-    - pips
+#    - pips
 #     Install images for k8s
-    - images
+#    - images
     # Install prometheus for k8s
-    - prometheus
+#    - prometheus
+    # Install volcano for k8s
+    - volcano
     # Install cadvisor for k8s
-    - cadvisor
-  # Install
-    - install
+#    - cadvisor
+    # Install uni-virt for k8s
+#    - install
